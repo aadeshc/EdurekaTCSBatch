@@ -12,6 +12,10 @@ export const Comp = () => {
   },[])
 
   useEffect(()=>{
+          console.log("sdffsfsf")
+  },[])
+
+  useEffect(()=>{
          console.log("new feature")
   },[])   
    const [data,setData] = useState()
