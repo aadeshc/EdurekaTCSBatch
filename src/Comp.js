@@ -11,12 +11,17 @@ export const Comp = () => {
     .then(json => console.log(setfirst(json)))
   },[])
 
-    const [data,setData] = useState()
+  useEffect(()=>{
+         console.log("new feature")
+  },[])   
+   const [data,setData] = useState()
   return (
     <div>
-             
+              {
+                (first.map((e)=><li> {e.name}</li>))
+              }
         <div id="MyDiv2">Hello React</div>
-        <input type='text' id="txtName" onChange={(e)=> setData(e.target.value)}/>
+        <input type='text' id="MyDiv" onChange={(e)=> setData(e.target.value)}/>
     </div>
   )
 }
